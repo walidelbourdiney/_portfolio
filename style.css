@@ -1,27 +1,29 @@
 :root {
-  --amber: #ffc43dff;
-  --prussian-blue: #002642ff;
-  --burnt-sienna: #de6e4bff;
-  --tiffany-blue: #7fd1b9ff;
-  --amber-2: #ffbf00ff;
+  --light-green: #a8d5ba;
+  --dark-green: #344e41;
+  --light-orange: #f4a261;
+  --dark-orange: #e76f51;
+  --neutral-white: #fefae0;
 }
+
 /* Reset and Basic Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--tiffany-blue);
-  color: var(--prussian-blue);
+  background-color: var(--light-green);
+  color: var(--dark-green);
 }
 
 header {
-  background-color: var(--burnt-sienna);
-  color: var(--prussian-blue);
+  background-color: var(--dark-orange);
+  color: var(--neutral-white);
   padding: 1rem 0;
   width: 80%;
   margin: auto;
   border-radius: 15px;
   margin-top: 5px;
+  text-align: center;
 }
 
 nav ul {
@@ -36,7 +38,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--prussian-blue);
+  color: var(--neutral-white);
   text-decoration: none;
 }
 
@@ -49,6 +51,7 @@ section {
   text-align: center;
   line-height: 2rem;
 }
+
 #projects {
   text-align: center;
 }
@@ -59,12 +62,14 @@ section {
   width: 80%;
   text-align: center;
 }
+
 .project img {
   width: 50%;
   border-radius: 20%;
 }
+
 #projects a {
-  color: var(--prussian-blue);
+  color: var(--dark-orange);
   text-decoration: none;
 }
 
@@ -72,44 +77,59 @@ section {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: var(--prussian-blue);
-  color: white;
+  background-color: var(--dark-green);
+  color: var(--neutral-white);
   text-decoration: none;
   border-radius: 5px;
 }
+
+.btn:hover {
+  background-color: var(--light-orange);
+  color: var(--dark-green);
+}
+
 #contact {
   text-align: center;
 }
+
 #contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-input {
-  border-style: none;
-  background-color: var(--amber);
-  color: var(--prussian-blue);
-  width: 50%;
-}
+
+input,
 textarea {
   border-style: none;
-  background-color: var(--amber);
-  color: var(--prussian-blue);
+  background-color: var(--light-orange);
+  color: var(--dark-green);
   width: 50%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
 }
 
 button[type="submit"] {
-  background-color: var(--prussian-blue);
-  color: var(--amber);
+  background-color: var(--dark-green);
+  color: var(--neutral-white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
 }
+
+button[type="submit"]:hover {
+  background-color: var(--dark-orange);
+}
+
 #linkdIn {
   text-decoration: none;
-  color: var(--prussian-blue);
+  color: var(--dark-orange);
 }
+
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: var(--prussian-blue);
-  color: var(--amber-2);
+  background-color: var(--dark-green);
+  color: var(--neutral-white);
 }
