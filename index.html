@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <h1>About Me</h1>
+      <p>
+        Hi, I'm Walid Ezzat, a front-end developer transitioning from mechanical
+        engineering. I specialize in building responsive and user-friendly
+        websites.
+      </p>
+      <a
+        href="https://drive.google.com/file/d/1VHl4YdppZtKwqR6L-7Wp_tsM5NSWl-X_/view?usp=drive_link"
+        target="_blank"
+        class="btn"
+        download="cv.pdf"
+        >Download My CV</a
+      >
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project">
+        <img src="img/a main character in.jpg" alt="Project 1 Screenshot" />
+        <h3>Project 1: To-Do App</h3>
+        <p>
+          A simple to-do list application built with HTML, CSS, and JavaScript.
+        </p>
+        <a href="project1-live-link" target="_blank">View Live</a> |
+        <a href="https://github.com/your-repo/project1" target="_blank"
+          >View Code</a
+        >
+      </div>
+      <div class="project">
+        <img src="img/a main character in.jpg" alt="Project 2 Screenshot" />
+        <h3>Project 2: Responsive Landing Page</h3>
+        <p>
+          A fully responsive landing page designed using CSS Grid and Flexbox.
+        </p>
+        <a href="project2-live-link" target="_blank">View Live</a> |
+        <a href="https://github.com/your-repo/project2" target="_blank"
+          >View Code</a
+        >
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          maxlength="50"
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+      <p>
+        Or connect with me on
+        <a
+          id="linkdIn"
+          href="https://www.linkedin.com/in/walid-ezzat-a35161126/"
+          target="_blank"
+          >LinkedIn</a
+        >!
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2024 WalidEzzat. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

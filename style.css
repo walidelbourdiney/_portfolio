@@ -1,0 +1,115 @@
+:root {
+  --amber: #ffc43dff;
+  --prussian-blue: #002642ff;
+  --burnt-sienna: #de6e4bff;
+  --tiffany-blue: #7fd1b9ff;
+  --amber-2: #ffbf00ff;
+}
+/* Reset and Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--tiffany-blue);
+  color: var(--prussian-blue);
+}
+
+header {
+  background-color: var(--burnt-sienna);
+  color: var(--prussian-blue);
+  padding: 1rem 0;
+  width: 80%;
+  margin: auto;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: var(--prussian-blue);
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+#about {
+  text-align: center;
+  line-height: 2rem;
+}
+#projects {
+  text-align: center;
+}
+
+.project {
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 80%;
+  text-align: center;
+}
+.project img {
+  width: 50%;
+  border-radius: 20%;
+}
+#projects a {
+  color: var(--prussian-blue);
+  text-decoration: none;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--prussian-blue);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#contact {
+  text-align: center;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  border-style: none;
+  background-color: var(--amber);
+  color: var(--prussian-blue);
+  width: 50%;
+}
+textarea {
+  border-style: none;
+  background-color: var(--amber);
+  color: var(--prussian-blue);
+  width: 50%;
+}
+
+button[type="submit"] {
+  background-color: var(--prussian-blue);
+  color: var(--amber);
+}
+#linkdIn {
+  text-decoration: none;
+  color: var(--prussian-blue);
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--prussian-blue);
+  color: var(--amber-2);
+}
